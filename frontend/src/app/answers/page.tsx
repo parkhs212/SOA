@@ -128,12 +128,12 @@ export default function AnswersPage() {
         {problems.map((p, qi) => {
           const correct = p.choices?.filter(c => c.is_correct) ?? []
           return (
-            <div key={p.id} className="bg-[#c0c0c0] rounded-xl border border-gray-100 px-4 py-5">
+            <div key={p.id} className="bg-white rounded-xl border border-gray-100 px-4 py-5">
               <div className="flex items-baseline gap-3">
                 <span className="text-xs font-semibold text-gray-400 shrink-0 w-8">Q{qi + 1}</span>
                 <div className="flex flex-col gap-1 flex-1">
                   {correct.map(c => (
-                    <p key={c.id} className="text-base leading-relaxed">
+                    <p key={c.id} className="text-sm leading-relaxed">
                       <span className="font-bold text-gray-500 mr-1">{LETTERS[c.order_num]}.</span>
                       <HighlightedText
                         text={fmt(choiceText(c, lang))}

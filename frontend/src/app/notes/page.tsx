@@ -102,7 +102,7 @@ export default function NotesPage() {
           {noted.map(({ p, qi }) => {
             const entry = notes[p.id]
             return (
-              <div key={p.id} className="bg-[#c0c0c0] rounded-2xl border border-gray-100 shadow-sm px-4 py-5">
+              <div key={p.id} className="bg-white rounded-2xl border border-gray-100 shadow-sm px-4 py-5">
                 <div className="flex items-center justify-between mb-2">
                   <div className="flex items-center gap-2">
                     <span className="text-xs font-semibold text-gray-400">Q{qi + 1}</span>

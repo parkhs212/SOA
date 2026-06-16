@@ -51,7 +51,7 @@ export default function ProblemsPage() {
       <div className="space-y-3">
         {problems.map(p => (
           <button key={p.id} onClick={() => setSelected(p)}
-            className="w-full text-left bg-[#c0c0c0] rounded-xl border border-gray-200 p-4 hover:border-blue-400 hover:shadow-sm transition">
+            className="w-full text-left bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-400 hover:shadow-sm transition">
             <div className="flex items-center justify-between">
               <span className="font-medium text-gray-800">{lang === 'en' ? (p.title_en ?? p.title) : p.title}</span>
               <div className="flex gap-2">
@@ -69,7 +69,7 @@ export default function ProblemsPage() {
       {selected && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50"
           onClick={() => setSelected(null)}>
-          <div className="bg-[#c0c0c0] rounded-2xl p-6 max-w-lg w-full max-h-[80vh] overflow-y-auto"
+          <div className="bg-white rounded-2xl p-6 max-w-lg w-full max-h-[80vh] overflow-y-auto"
             onClick={e => e.stopPropagation()}>
             <div className="flex items-center justify-between mb-2 gap-2">
               <h2 className="text-xl font-bold">{lang === 'en' ? (selected.title_en ?? selected.title) : selected.title}</h2>

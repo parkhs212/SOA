@@ -20,7 +20,7 @@ export default function Home() {
         </Link>
         <Link
           href="/answers"
-          className="flex-1 bg-[#c0c0c0] text-gray-700 border border-gray-200 px-6 py-5 rounded-2xl hover:bg-gray-300 font-semibold text-lg shadow-sm transition-colors"
+          className="flex-1 bg-white text-gray-700 border border-gray-200 px-6 py-5 rounded-2xl hover:bg-gray-50 font-semibold text-lg shadow-sm transition-colors"
         >
           정답 보기
         </Link>
