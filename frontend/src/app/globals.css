@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'GungSeo', '궁서', 'Gungsuh', 'GungsuhChe', 'Batang', serif !important;
+}
+
+body {
+  background-color: #c0c0c0;
+}
