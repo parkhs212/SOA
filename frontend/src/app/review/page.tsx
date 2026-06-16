@@ -101,7 +101,7 @@ export default function ReviewPage() {
       ) : (
         <div className="space-y-4 mt-4">
           {remaining.map(({ p, qi }) => (
-            <div key={p.id} className="bg-white rounded-2xl border border-gray-100 shadow-sm px-4 py-5">
+            <div key={p.id} className="bg-[#c0c0c0] rounded-2xl border border-gray-100 shadow-sm px-4 py-5">
               <div className="flex items-center justify-between mb-2">
                 <span className="text-xs font-semibold text-gray-400">Q{qi + 1}</span>
                 <button
