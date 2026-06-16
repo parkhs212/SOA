@@ -203,7 +203,7 @@ function QuizContent() {
       </div>
 
       {/* 문제 */}
-      <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 mb-3">
+      <div className="bg-[#c0c0c0] rounded-2xl border border-gray-100 shadow-sm p-5 mb-3">
         {isMulti && (
           <p className="text-xs font-semibold text-amber-500 mb-2">{correctCount}개를 선택하세요</p>
         )}
@@ -216,7 +216,7 @@ function QuizContent() {
       <div className="space-y-2 mb-4">
         {problem.choices?.map((c, i) => {
           const isSelected = selectedSet.has(c.id)
-          let cls = 'border border-gray-200 bg-white text-gray-700 hover:bg-gray-50 cursor-pointer'
+          let cls = 'border border-gray-200 bg-[#c0c0c0] text-gray-700 hover:bg-gray-300 cursor-pointer'
 
           if (answered) {
             if (c.is_correct && isSelected) {
@@ -243,7 +243,7 @@ function QuizContent() {
               disabled={answered || showAnswer}
               className={`w-full text-left px-4 py-3 rounded-xl transition-colors text-sm sm:text-base ${cls}`}
             >
-              <span className="font-bold mr-2">{LETTERS[i]}.</span>
+              <span className="mr-2">{LETTERS[i]}.</span>
               {highlightOn && c.is_correct ? (
                 <HighlightedText
                   text={fmt(choiceText(c, lang))}
